@@ -68,7 +68,7 @@ a {
 }
 
 a:hover:not(header nav a):not(nav a) {
-    color: #c7364d;
+    color: #4468bc;
 }
 
 /* Header */
