@@ -1,144 +1,241 @@
-<!DOCTYPE HTML>
-<!--
-	Landed by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Veina Vascular</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<link rel="icon" type="image/x-icon" href="assets/images/favicon.ico" />
-		<link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png" />
-		<link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png" />
-		<link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png" />
-		<link rel="manifest" href="assets/site.webmanifest" />
-	</head>
-	<body class="is-preload landing">
-		<div id="page-wrapper">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Veina - Blood collection device designed to reduce hemolysis and improve sample integrity in emergency departments">
+    <title>Veina</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <img src="images/veina.png" alt="Veina Logo">
+            </a>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">☰</button>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#problem">Problem</a></li>
+                    <li><a href="#approach">Approach</a></li>
+                    <li><a href="team.html">Team</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-			<!-- Header -->
-				<header id="header">
-					<a id="logo" href="index.html"><img id="veina-logo" alt="Veina Logo" src="images/negativelogo-removebg.png"></a>
-					<nav id="nav">
-						<ul>
-							<li><a href="index.html">Home</a></li>
-							<li><a href="need.html">Unmet Clinical Need</a></li>
-							<li><a href="team.html">Team</a></li>
-							<li><a href=mailto:cbid.em@gmail.com class="button primary">Contact</a></li>
-						</ul>
-					</nav>
-				</header>
+    <!-- Hero Section -->
+    <section class="hero" style="min-height: 100vh; display: flex; flex-direction: column; justify-content: flex-start; align-items: center; text-align: center; position: relative; padding: 2rem; padding-top: 8rem;">
+        <div class="hero-content" style="max-width: 100%; width: 100%;">
+            <img src="images/veina.png" alt="Veina Logo" class="hero-logo" style="max-width: 90%; height: auto; width: auto; max-height: 300px; margin: 0 auto var(--spacing-md); display: block;">
+            <p id="hero-subtext" style="font-size: clamp(2rem, 8vw, 4rem); color: var(--text-color); font-weight: 600; margin-top: var(--spacing-md); min-height: 4rem; line-height: 1.2;">
+                No repeat blood draws.
+            </p>
+        </div>
+        <a href="#problem" class="hero-arrow" style="position: absolute; bottom: 8rem; left: 50%; transform: translateX(-50%); font-size: 2rem; color: var(--text-light); text-decoration: none; animation: bounce 2s infinite; z-index: 10;">
+            ↓
+        </a>
+    </section>
 
-			<!-- Banner -->
-				<section id="banner">
-					<div class="content">
-						<header>
-							<img src="images/negativelogo1.jpg" alt="Veina Logo" style="width: auto; height: 150px;">
-							<h3>Reimagining blood draws to address <br>hemolysis in Emergency Medicine</h3>
-						</header>
-						<span class="image"><img src="images/bloodicon.jpg" alt="" /></span>
-					</div>
-					<a href="#one" class="goto-next scrolly">Next</a>
-				</section>
+    <!-- Problem Section -->
+    <section id="problem" style="padding-top: clamp(120px, 15vh, 180px);">
+        <div class="container">
+            <h2 style="font-size: clamp(2rem, 6vw, 4rem); font-weight: 700; color: #b91b11; margin-bottom: var(--spacing-xl); text-align: center; line-height: 1.2;">
+                10% of blood draws are discarded and redrawn
+            </h2>
+            <div class="image-section" style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-xl); align-items: center; margin-top: var(--spacing-xl); width: 100%;">
+                <div style="width: 100%;">
+                    <img src="images/problem.png" alt="Problem illustration" style="width: 100%; max-width: 100%; height: auto; border-radius: 8px; display: block;">
+                </div>
+                <div style="width: 100%;">
+                    <p style="font-size: clamp(1rem, 2vw, 1.2rem); line-height: 1.8; color: var(--text-color); margin-bottom: var(--spacing-md);">
+                        <strong>High pressures during blood collection rupture red blood cells, compromising the sample.</strong>
+                    </p>
+                    <p style="font-size: clamp(0.95rem, 1.8vw, 1.1rem); line-height: 1.8; color: var(--text-color); margin-bottom: var(--spacing-sm);">
+                        Frontline clinicians and lab teams are left dealing with the consequences of inadequately designed tools.
+                    </p>
+                    <p style="font-size: clamp(0.95rem, 1.8vw, 1.1rem); line-height: 1.8; color: var(--text-color); margin-bottom: var(--spacing-sm);">
+                        Labs reject the sample. Clinicians redraw. Patients wait.
+                    </p>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
 
-			<!-- One -->
-				<section id="one" class="spotlight style1 bottom">
-					<span class="image fit main"><img src="images/bloodbanner.jpg" alt="" /></span>
-					<div class="content">
-						<div class="container">
-							<div class="row">
-								<div class="col-4 col-12-medium">
-									<header>
-										<h3>No repeat blood draws.<br>No wasted time.<br>No compromises on care.</h3>
-									</header>
-								</div>
-								<div class="col-4 col-12-medium">
-									<p>Veina’s novel blood-draw device reduces hemolysis by optimizing 
-									flow dynamics and minimizing red blood cell shearing, while 
-									seamlessly integrating into existing emergency department (ED) 
-									workflows. Blood draws in the ED are inherently different from 
-									those in other clinical settings due to the urgency of care, high patient turnover, 
-									and the need to draw blood through IV catheters rather than dedicated phlebotomy</p>
-								</div>
-								<div class="col-4 col-12-medium">
-									<p>equipment. These conditions often lead to turbulent flow and increased 
-									red blood cell damage, resulting in higher hemolysis rates. By 
-									improving blood sample integrity, Veina’s device aims to prevent 
-									repeat blood draws, which consume hospital resources, prolong nursing 
-									time, delay patient care, and increase economic losses for the ED.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<a href="#two" class="goto-next scrolly">Next</a>
-				</section>
+    <!-- Approach Section -->
+    <section id="approach" style="background: var(--bg-light); padding-top: clamp(120px, 15vh, 180px);">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: var(--spacing-xl);">
+                <h2 style="font-size: clamp(2rem, 5vw, 3.5rem); font-weight: 700; color: #4468bc; margin-bottom: var(--spacing-md); line-height: 1.2;">
+                    veina's syringe
+                </h2>
+                <p style="font-size: clamp(1.5rem, 3.5vw, 2rem); font-weight: 600; color: var(--text-color); margin-bottom: var(--spacing-xl); line-height: 1.3;">
+                    The first blood-draw syringe built to reduce hemolysis during collection for every patient
+                </p>
+            </div>
+            <div class="image-section" style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-xl); align-items: center; margin-top: var(--spacing-xl); width: 100%;">
+                <div style="width: 100%;">
+                    <img src="images/hemolysis.png" alt="Hemolysis solution" style="width: 100%; max-width: 100%; height: auto; border-radius: 8px; display: block;">
+                </div>
+                <div style="width: 100%;">
+                    <p style="font-size: clamp(1rem, 2vw, 1.2rem); line-height: 1.8; color: var(--text-color); margin-bottom: var(--spacing-md);">
+                        Designed to modulate pressure during aspiration, reducing mechanical stress on red blood cells.
+                    </p>
+                    <p style="font-size: clamp(1rem, 2vw, 1.2rem); line-height: 1.8; color: var(--text-color); margin-bottom: var(--spacing-md);">
+                        Our approach focuses on improving modulating pressure during collection, reducing mechanical stress on red blood cells. We've designed and iterated with nurses, ensuring our device doesn't add steps, complexity, or workflow burden.
+                    </p>
+                    <p style="font-size: clamp(1rem, 2vw, 1.2rem); line-height: 1.8; color: var(--text-color);">
+                        By addressing sample quality upstream, we aim to reduce downstream consequences for labs, clinicians, and patients.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-			<!-- Two -->
-				<section id="two" class="spotlight style2 right">
-					<span class="image fit main"><img src="images/homeneed.jpg" alt="" /></span>
-					<div class="content">
-						<header>
-							<h2>17% of Blood Samples in the ED Hemolyze</h2>
-							<p>This affects over 12 million patients annually.</p>
-						</header>
-						<p>When red blood cell membranes break apart, they release intracellular material 
-						into the bloodstream, offsetting physiological blood values and compromising key 
-						diagnostic tests, including potassium, lactate dehydrogenase (LDH), and liver enzyme 
-						levels (AST, ALT). The issue stems from blood draw techniques and equipment, such as 
-						IV catheters and syringes, that cause turbulent flow and high pressures, damaging red blood cells.</p>
-						<ul class="actions">
-							<li><a href="need.html" class="button">Learn More</a></li>
-						</ul>
-					</div>
-					<a href="#three" class="goto-next scrolly">Next</a>
-				</section>
+    <!-- Cost Impact Section -->
+    <section id="cost-impact" style="padding-top: clamp(120px, 15vh, 180px);">
+        <div class="container">
+            <h2 style="font-size: clamp(2rem, 5vw, 3.5rem); font-weight: 700; color: var(--primary-color); margin-bottom: var(--spacing-md); text-align: center; line-height: 1.2;">
+                Each hospital will save millions with Veina
+            </h2>
+            <div class="image-section" style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-xl); align-items: center; margin-top: var(--spacing-xl); width: 100%;">
+                <div style="width: 100%;">
+                    <img src="images/val.png" alt="Cost impact visualization" style="width: 100%; max-width: 100%; height: auto; border-radius: 8px; display: block;">
+                </div>
+                <div style="width: 100%;">
+                    <p style="font-size: clamp(1rem, 2vw, 1.2rem); line-height: 1.8; color: var(--primary-color); margin-bottom: var(--spacing-md); font-weight: 500;">
+                        Average cost impact per Hemolyzed sample:
+                    </p>
+                    <p style="font-size: clamp(2rem, 4vw, 3rem); line-height: 1.2; color: var(--veina-red); font-weight: 700; margin-top: var(--spacing-md);">
+                        $300
+                    </p>
+                    <p style="font-size: clamp(1rem, 2vw, 1.2rem); line-height: 1.8; color: var(--primary-color); margin-bottom: var(--spacing-md); font-weight: 500;">
+                        For a hospital with 600K annual blood draws:
+                    </p>
+                    <p style="font-size: clamp(2rem, 4vw, 3rem); line-height: 1.2; color: var(--veina-red); font-weight: 700; margin-top: var(--spacing-md);">
+                        $18M loss
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-			<!-- Three -->
-				<section id="three" class="spotlight style3 left">
-					<span class="image fit main bottom"><img src="images/workflow.jpg" alt="" /></span>
-					<div class="content">
-						<header>
-							<h2>Hemolysis has a burden of $1.4 billion annually in the US</h2>
-							<p>What are the main contributers to the cost?</p>
-						</header>
-						<p>In EDs, hemolysis increases crowding, drains nursing and provider resources, 
-						and slows throughput. For a typical ED with 60,000 visits per year, the cost of 
-						material and personnel used to address hemolysis is $221,000 annually. There’s 
-						also an impact on labs as re-testing hemolyzed samples costs $3 per test and creates additional bottlenecks.</p>
-						<ul class="actions">
-							<li><a href="need.html" class="button">Learn More</a></li>
-						</ul>
-					</div>
-					<a href="#four" class="goto-next scrolly">Next</a>
-				</section>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p style="font-size: 1.2rem; font-weight: 600; margin-bottom: var(--spacing-md); color: var(--white);">Contact us</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/company/veina-vascular/" aria-label="LinkedIn">LinkedIn</a>
+                <a href="mailto:veinavascular@gmail.com" aria-label="Email">Email</a>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2026 Veina Vascular - All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 
-			<!-- Footer -->
-				<footer id="footer">
-					<ul class="icons">
-						<li><a href="https://www.linkedin.com/company/veina-vascular/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-						<li><a href="https://www.instagram.com/cbid.em/" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-						<li><a href="emailto:cbid.em@gmail.com" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
-					</ul>
-					<ul class="copyright">
-						<li>&copy;2025 Veina Vascular - All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
-				</footer>
+    <script src="js/main.js"></script>
+    <style>
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateX(-50%) translateY(0);
+            }
+            40% {
+                transform: translateX(-50%) translateY(-10px);
+            }
+            60% {
+                transform: translateX(-50%) translateY(-5px);
+            }
+        }
 
-		</div>
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+        #hero-subtext {
+            min-height: 2rem;
+            display: inline-block;
+        }
 
-	</body>
+        #hero-subtext::after {
+            content: '|';
+            animation: blink 1s infinite;
+            margin-left: 2px;
+        }
+
+        @keyframes blink {
+            0%, 50% { opacity: 1; }
+            51%, 100% { opacity: 0; }
+        }
+    </style>
+    <script>
+        // Cycle through hero subtext phrases with typing effect
+        const phrases = [
+            "No repeat blood draws.",
+            "No wasted time.",
+            "No compromises on care."
+        ];
+        let currentPhrase = 0;
+        let currentChar = 0;
+        let isDeleting = false;
+        const subtextElement = document.getElementById('hero-subtext');
+        let typingTimeout;
+
+        function typeText() {
+            if (!subtextElement) return;
+
+            const currentText = phrases[currentPhrase];
+            
+            if (isDeleting) {
+                // Delete characters
+                subtextElement.textContent = currentText.substring(0, currentChar - 1);
+                currentChar--;
+                
+                if (currentChar === 0) {
+                    isDeleting = false;
+                    currentPhrase = (currentPhrase + 1) % phrases.length;
+                    typingTimeout = setTimeout(typeText, 500); // Pause before typing next phrase
+                    return;
+                }
+            } else {
+                // Type characters
+                subtextElement.textContent = currentText.substring(0, currentChar + 1);
+                currentChar++;
+                
+                if (currentChar === currentText.length) {
+                    // Finished typing, wait then start deleting
+                    typingTimeout = setTimeout(() => {
+                        isDeleting = true;
+                        typeText();
+                    }, 2000); // Wait 2 seconds before deleting
+                    return;
+                }
+            }
+            
+            // Speed: faster when deleting, normal when typing
+            const speed = isDeleting ? 50 : 100;
+            typingTimeout = setTimeout(typeText, speed);
+        }
+
+        // Start typing effect when page loads
+        if (subtextElement) {
+            // Start with first phrase
+            subtextElement.textContent = '';
+            typeText();
+        }
+    </script>
+</body>
 </html>
