@@ -11,6 +11,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
     <link rel="manifest" href="site.webmanifest">
+    <script async src="https://tally.so/widgets/embed.js"></script>
 </head>
 <body>
     <!-- Header -->
@@ -25,7 +26,10 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="#problem">Problem</a></li>
                     <li><a href="#approach">Approach</a></li>
-                    <li><a href="team.html">Team</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li>
+                        <a href="#stay-updated" class="contact-nav-button">Contact Us</a>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -128,18 +132,254 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="footer-content">
-            <p style="font-size: 1.2rem; font-weight: 600; margin-bottom: var(--spacing-md); color: var(--white);">Contact us</p>
-            <div class="social-links">
-                <a href="https://www.linkedin.com/company/veina-vascular/" aria-label="LinkedIn">LinkedIn</a>
-                <a href="mailto:veinavascular@gmail.com" aria-label="Email">Email</a>
+    <!-- Team Section -->
+    <section id="team" style="padding-top: clamp(120px, 15vh, 180px);">
+        <div class="container">
+            <div class="section-header">
+                <h2 style="font-size: clamp(2rem, 5vw, 3.5rem); font-weight: 700; color: #4468bc; margin-bottom: var(--spacing-md); line-height: 1.2;">
+                    Our Team
+                </h2>
             </div>
-            <div class="copyright">
-                <p>&copy; 2026 Veina Vascular - All rights reserved.</p>
+            <div class="team-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: var(--spacing-xl); max-width: 800px; margin: 0 auto;">
+                <div class="team-member" style="text-align: center;">
+                    <img src="images/saardhak.jpg" alt="Saardhak Bhrugubanda" style="width: 250px; height: 250px; object-fit: cover; border-radius: 50%; margin-bottom: var(--spacing-md); border: 3px solid var(--veina-blue);">
+                    <h3 style="font-size: 1.5rem; margin-bottom: var(--spacing-xs);">Saardhak Bhrugubanda</h3>
+                    <p style="font-size: 1.1rem; color: var(--veina-blue); font-weight: 600; margin-bottom: var(--spacing-sm);">CEO</p>
+                    <p><a href="https://www.linkedin.com/in/saardhak/" style="color: var(--veina-blue);">LinkedIn</a></p>
+                </div>
+                <div class="team-member" style="text-align: center;">
+                    <img src="images/natasha.jpg" alt="Natasha Mody" style="width: 250px; height: 250px; object-fit: cover; border-radius: 50%; margin-bottom: var(--spacing-md); border: 3px solid var(--veina-blue);">
+                    <h3 style="font-size: 1.5rem; margin-bottom: var(--spacing-xs);">Natasha Mody</h3>
+                    <p style="font-size: 1.1rem; color: var(--veina-blue); font-weight: 600; margin-bottom: var(--spacing-sm);">President/CTO</p>
+                    <p><a href="https://www.linkedin.com/in/natashamodyy/" style="color: var(--veina-blue);">LinkedIn</a></p>
+                </div>
             </div>
         </div>
+    </section>
+
+    <!-- Advisors Section -->
+    <section id="advisors" style="background: var(--bg-light); padding-top: clamp(120px, 15vh, 180px);">
+        <div class="container">
+            <div class="section-header">
+                <h2>Advisors</h2>
+            </div>
+            <div class="team-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: var(--spacing-xl); max-width: 1200px; margin: 0 auto;">
+                <div class="team-member" style="text-align: center;">
+                    <img src="images/ram.jpg" alt="Dr. Lukas Ramcharran" style="width: 200px; height: 200px; object-fit: cover; border-radius: 50%; margin-bottom: var(--spacing-md); border: 3px solid var(--veina-blue);">
+                    <h3 style="font-size: 1.3rem; margin-bottom: var(--spacing-xs);">Dr. Lukas Ramcharran, MD, MBA</h3>
+                    <p style="font-size: 1rem; color: var(--veina-blue); font-weight: 600; margin-bottom: var(--spacing-xs);">Lead Clinical Mentor</p>
+                    <p style="font-size: 0.95rem; color: var(--text-light);">Assistant Professor of Emergency Medicine</p>
+                </div>
+                <div class="team-member" style="text-align: center;">
+                    <img src="images/mic.jpeg" alt="Dr. Michael Phelan" style="width: 200px; height: 200px; object-fit: cover; border-radius: 50%; margin-bottom: var(--spacing-md); border: 3px solid var(--veina-blue);">
+                    <h3 style="font-size: 1.3rem; margin-bottom: var(--spacing-xs);">Dr. Michael Phelan, MD</h3>
+                    <p style="font-size: 1rem; color: var(--veina-blue); font-weight: 600; margin-bottom: var(--spacing-xs);">Emergency Physician</p>
+                    <p style="font-size: 0.95rem; color: var(--text-light); margin-bottom: var(--spacing-xs);">Cleveland Clinic</p>
+                    <p style="font-size: 0.95rem; color: var(--text-light);">Top-cited Hemolysis KOL</p>
+                </div>
+                <div class="team-member" style="text-align: center;">
+                    <img src="images/kat.jpeg" alt="Katie Solley" style="width: 200px; height: 200px; object-fit: cover; border-radius: 50%; margin-bottom: var(--spacing-md); border: 3px solid var(--veina-blue);">
+                    <h3 style="font-size: 1.3rem; margin-bottom: var(--spacing-xs);">Katie Solley, MSE</h3>
+                    <p style="font-size: 1rem; color: var(--veina-blue); font-weight: 600; margin-bottom: var(--spacing-xs);">Co-founder + CEO</p>
+                    <p style="font-size: 0.95rem; color: var(--text-light);">eyedea Medical</p>
+                </div>
+                <div class="team-member" style="text-align: center;">
+                    <img src="images/yaz.jpeg" alt="Dr. Youseph Yazdi" style="width: 200px; height: 200px; object-fit: cover; border-radius: 50%; margin-bottom: var(--spacing-md); border: 3px solid var(--veina-blue);">
+                    <h3 style="font-size: 1.3rem; margin-bottom: var(--spacing-xs);">Dr. Youseph Yazdi, PhD</h3>
+                    <p style="font-size: 1rem; color: var(--veina-blue); font-weight: 600; margin-bottom: var(--spacing-xs);">Executive Director</p>
+                    <p style="font-size: 0.95rem; color: var(--text-light);">CBID</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stay Updated Section -->
+    <section id="stay-updated" style="padding: 100px 20px;">
+        <div class="container" style="max-width: 1000px; margin: 0 auto; text-align: center;">
+    
+            <h2 style="font-size: clamp(2rem, 5vw, 3.5rem); color: #4468bc; margin-bottom: 3rem;">
+                Stay in the know
+            </h2>
+    
+            <!-- Side-by-side content -->
+            <div style="
+                display: flex;
+                align-items: flex-start;
+                justify-content: center;
+                gap: 4rem;
+                width: 100%;
+            ">
+    
+                <!-- Left: Tally form -->
+                <div style="
+                    flex: 2;
+                    min-width: 0;
+                    text-align: center;
+                ">
+                    <p style="font-size: 1.1rem; font-weight: 600;
+                    margin-bottom: 1.5rem;
+                    color: #4468bc;">
+                        Sign up to receive updates from Veina.
+                    </p>
+    
+                    <iframe
+                        data-tally-src="https://tally.so/embed/xXLPGr?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+                        loading="lazy"
+                        width="100%"
+                        height="276"
+                        frameborder="0"
+                        marginheight="0"
+                        marginwidth="0"
+                        title="Stay in the know">
+                    </iframe>
+                </div>
+    
+                <!-- Right: Contact buttons -->
+                <div style="
+                    flex: 1;
+                    min-width: 260px;
+                    text-align: center;
+                ">
+                    <p style="
+                        font-size: 1.1rem;
+                        font-weight: 600;
+                        margin-bottom: 1.5rem;
+                        color: #4468bc;
+                    ">
+                        Or reach out directly!
+                    </p>
+    
+                    <div style="
+                        display: flex;
+                        justify-content: center;
+                        gap: 1rem;
+                        flex-wrap: wrap;
+                    ">
+                        <a
+                            href="mailto:veinavascular@gmail.com"
+                            style="
+                                display: inline-block;
+                                min-width: 110px;
+                                padding: 12px 24px;
+                                background-color: white;
+                                color: #4468bc;
+                                border: 2px solid #4468bc;
+                                border-radius: 8px;
+                                font-size: 1rem;
+                                font-weight: 600;
+                                text-align: center;
+                                text-decoration: none;
+                                box-sizing: border-box;
+                            "
+                            onmouseover="this.style.backgroundColor='#4468bc'; this.style.color='white';"
+                            onmouseout="this.style.backgroundColor='white'; this.style.color='#4468bc';">
+                            Email
+                        </a>
+    
+                        <a
+                            href="https://www.linkedin.com/company/veina-vascular/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            style="
+                                display: inline-block;
+                                min-width: 110px;
+                                padding: 12px 24px;
+                                background-color: white;
+                                color: #4468bc;
+                                border: 2px solid #4468bc;
+                                border-radius: 8px;
+                                font-size: 1rem;
+                                font-weight: 600;
+                                text-align: center;
+                                text-decoration: none;
+                                box-sizing: border-box;
+                            "
+                            onmouseover="this.style.backgroundColor='#4468bc'; this.style.color='white';"
+                            onmouseout="this.style.backgroundColor='white'; this.style.color='#4468bc';">
+                            LinkedIn
+                        </a>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    </section>
+    
+    <!-- <section id="stay-updated" style="padding: 100px 20px;">
+        <div class="container" style="max-width: 700px; margin: 0 auto; text-align: center;">
+            <h2 style="font-size: clamp(2rem, 5vw, 3.5rem); color: #4468bc; margin-bottom: 1rem;">
+                Stay in the know
+            </h2>
+
+            <p style="font-size: 1.1rem; margin-bottom: 2rem;">
+                Sign up to receive updates from Veina.
+            </p>
+
+            <iframe
+                data-tally-src="https://tally.so/embed/xXLPGr?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+                loading="lazy"
+                width="100%"
+                height="276"
+                frameborder="0"
+                marginheight="0"
+                marginwidth="0"
+                title="Stay in the know">
+            </iframe>
+            <div style="margin-top: 2.5rem;">
+                <p style="font-size: 1.1rem; font-weight: 600; margin-bottom: 1rem; color: #4468bc;">
+                    Shoot us a note!
+                </p>
+                <div style="display: flex; justify-content: center; gap: 1rem; margin: 1rem 0 2rem;">
+                    <a href="mailto:veinavascular@gmail.com"
+                        style="
+                            display: inline-block;
+                            min-width: 110px;
+                            padding: 12px 24px;
+                            background-color: white;
+                            color: #4468bc;
+                            border: 2px solid #4468bc;
+                            border-radius: 8px;
+                            font-size: 1rem;
+                            font-weight: 600;
+                            text-align: center;
+                            text-decoration: none;
+                            box-sizing: border-box;"
+                        onmouseover="this.style.backgroundColor='#4468bc'; this.style.color='white';"
+                        onmouseout="this.style.backgroundColor='white'; this.style.color='#4468bc';"
+                    >Email</a>
+
+                    <a href="https://www.linkedin.com/company/veina-vascular/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style="
+                            display: inline-block;
+                            min-width: 110px;
+                            padding: 12px 24px;
+                            background-color: white;
+                            color: #4468bc;
+                            border: 2px solid #4468bc;
+                            border-radius: 8px;
+                            font-size: 1rem;
+                            font-weight: 600;
+                            text-align: center;
+                            text-decoration: none;
+                            box-sizing: border-box;"
+                        onmouseover="this.style.backgroundColor='#4468bc'; this.style.color='white';"
+                        onmouseout="this.style.backgroundColor='white'; this.style.color='#4468bc';"
+                    >LinkedIn</a>
+                </div>                
+            </div>            
+        </div>
+    </section> -->
+
+    <!-- Footer -->
+    <footer>
+        <!-- <div class="footer-content"> -->
+            <!-- <p style="font-size: 1.2rem; font-weight: 600; margin-bottom: var(--spacing-md); color: var(--white);">Contact us</p> -->
+        <div class="copyright">
+            <p>&copy; 2026 Veina Vascular - All rights reserved.</p>
+        </div>
+        <!-- </div> -->
     </footer>
 
     <script src="js/main.js"></script>
